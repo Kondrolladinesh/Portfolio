@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Contact from './Routes/Contact';
 import Home from './Routes/Home';

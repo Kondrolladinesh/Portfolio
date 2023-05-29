@@ -237,7 +237,7 @@ const Home = () => {
       <Container>
         <LeftBox>
             <Heading>My Profile</Heading>
-            <ProfilePicture src="./myphoto.png" alt="Profile" />
+            <ProfilePicture src="./images/myPhoto.png" alt="Profile" />
             <Text>Kondrolla<br />Dinesh Reddy</Text>
             <DetailContainer>
               <Details> <AiFillMail/> &nbsp;dineshreddykondrolla@gmail.com</Details>
