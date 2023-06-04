@@ -9,6 +9,7 @@ const CardContainer = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    flex-direction: row;
   }
 `;
 
@@ -22,9 +23,6 @@ const CardOrder = styled.div`
     &:not(:last-child) {
       margin-bottom: 20px;
     }
-  }
-  @media (max-width: 768px) {
-    flex-direction: row;
   }
 `;
 
