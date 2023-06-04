@@ -20,9 +20,11 @@ const CardOrder = styled.div`
     display: flex;
     gap: 20px;
     &:not(:last-child) {
-      flex-direction: row;
       margin-bottom: 20px;
     }
+  }
+  @media (max-width: 768px) {
+    flex-direction: row;
   }
 `;
 
