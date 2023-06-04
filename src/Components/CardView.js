@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
+  padding: 20px;
   
   @media (max-width: 768px) {
     flex-direction: column;
@@ -13,6 +14,7 @@ const CardContainer = styled.div`
 const CardOrder = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 20px;
 
   & > div {
     display: flex;
