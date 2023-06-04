@@ -20,6 +20,7 @@ const CardOrder = styled.div`
     display: flex;
     gap: 20px;
     &:not(:last-child) {
+      flex-direction: row;
       margin-bottom: 20px;
     }
   }
@@ -43,7 +44,6 @@ const Card = styled.div`
   }
 
   @media (max-width: 768px) {
-    flex-direction: row;
     width: 100%; /* Full width on smaller screens */
     height: auto; /* Adjust height based on content */
   }
