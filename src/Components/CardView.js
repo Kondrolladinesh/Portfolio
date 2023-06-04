@@ -44,7 +44,8 @@ const Card = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%; /* Full width on smaller screens */
+//     width: 100%; /* Full width on smaller screens */
+    width: 225px;
     height: auto; /* Adjust height based on content */
   }
 `;
