@@ -43,6 +43,7 @@ const Card = styled.div`
   }
 
   @media (max-width: 768px) {
+    flex-direction: row;
     width: 100%; /* Full width on smaller screens */
     height: auto; /* Adjust height based on content */
   }
