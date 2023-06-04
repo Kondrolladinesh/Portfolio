@@ -27,10 +27,6 @@ const CardOrder = styled.div`
       margin-bottom: 20px;
     }
   }
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: row;
-  }
 `;
 
 const Card = styled.div`
@@ -51,6 +47,7 @@ const Card = styled.div`
   }
 
   @media (max-width: 768px) {
+    flex-direction: row;
     width: 100%; /* Full width on smaller screens */
     height: auto; /* Adjust height based on content */
   }
