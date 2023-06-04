@@ -8,8 +8,11 @@ const CardContainer = styled.div`
   padding: 20px;
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    flex-direction: row;
+//     grid-template-columns: 1fr;
+//     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow-x: initial;
   }
 `;
 
