@@ -1,20 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// const CardContainer = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-//   gap: 20px;
-//   padding: 20px;
-
-//   @media (max-width: 768px) {
-// //     grid-template-columns: 1fr;
-// //     flex-direction: row;
-//     flex-wrap: wrap;
-//     justify-content: flex-start;
-//     overflow-x: initial;
-//   }
-// `;
+const CardContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
 
 const CardOrder = styled.div`
   display: flex;
@@ -47,7 +41,6 @@ const Card = styled.div`
   }
 
   @media (max-width: 768px) {
-    flex-direction: row;
     width: 100%; /* Full width on smaller screens */
     height: auto; /* Adjust height based on content */
   }
@@ -86,6 +79,7 @@ const CardView = () => {
 //     <CardContainer>
       <CardOrder>
         <div>
+          <CardContainer>
           <Card>
             <div>
               <CardTitle>DApp</CardTitle>
@@ -108,8 +102,10 @@ const CardView = () => {
             </div>
             <Button><a style={{color:"#fff"}} href= "https://www.linkedin.com/in/kondrolla-dinesh/">Know More</a></Button>
           </Card>
+          </CardContainer>
         </div>
         <div>
+          <CardContainer>
           <Card>
             <div>
               <CardTitle>TransportRoute Algorithm</CardTitle>
@@ -140,6 +136,7 @@ const CardView = () => {
             </div>
             <Button><a style={{color:"#fff"}} href= "https://github.com/Kondrolladinesh/ResoLib">Know More</a></Button>
           </Card>
+          </CardContainer>
         </div>
       </CardOrder>
 //     </CardContainer>
