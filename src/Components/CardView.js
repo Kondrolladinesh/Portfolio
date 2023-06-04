@@ -1,20 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CardContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
+// const CardContainer = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//   gap: 20px;
+//   padding: 20px;
 
-  @media (max-width: 768px) {
-//     grid-template-columns: 1fr;
-//     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    overflow-x: initial;
-  }
-`;
+//   @media (max-width: 768px) {
+// //     grid-template-columns: 1fr;
+// //     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: flex-start;
+//     overflow-x: initial;
+//   }
+// `;
 
 const CardOrder = styled.div`
   display: flex;
@@ -26,6 +26,10 @@ const CardOrder = styled.div`
     &:not(:last-child) {
       margin-bottom: 20px;
     }
+  }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
   }
 `;
 
@@ -82,7 +86,7 @@ const Button = styled.button`
 
 const CardView = () => {
   return (
-    <CardContainer>
+//     <CardContainer>
       <CardOrder>
         <div>
           <Card>
@@ -141,7 +145,7 @@ const CardView = () => {
           </Card>
         </div>
       </CardOrder>
-    </CardContainer>
+//     </CardContainer>
   );
 };
 
